@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #8dafe6;
+    transition: background-color 0.3s ease;
+}
+body.scrolled {
+    background-color: #ffffff;
+}
+#content section {
+    background-color: inherit;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000000000;
+}
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    position: fixed;
+    left: 30%;
+}
+#navbar.scrolled .nav-items h2 {
+    color: #d6e6d3f0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: full-width;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+#navbar.scrolled {
+    background-color: #8dafe6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#navbar.scrolled .logo,
+#navbar.scrolled .nav-links a {
+    color: #fff;
+}
+
+#navbar.scrolled .nav-links a:hover {
+    color: #f1c40f;
+    background-color: rgba(241, 196, 15, 0.2);
+}
+
+.nav-links a.active {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 80px;
+}
+.content #home , #about , #services , #portfolio , #contact {
+    height: 100vh; padding-top: 80px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #8dafe6;
+}
